@@ -106,11 +106,11 @@
         transition: 0.4s all ease;
       }
       .box {
-        min-width: 200px;
-        height: 300px;
+        min-width: 150px;
+        height: 280px;
         border-radius: 10px;
         margin-top: 30px;
-        margin-right: 60px;
+        margin-right: 100px;
         position: relative;
         transition: 0.4s all ease;
         cursor: pointer;
@@ -279,6 +279,7 @@
       }
       .pan{
         min-width: 20%;
+        cursor: pointer;
       }
       @media(max-width: 600px){
         .logo {
@@ -286,8 +287,13 @@
         position: absolute;
         top: 7px;
         left: 20px;
-      }
-      
+        }
+        .cen{
+          width: 500px;
+        }
+        
+        
+      }  
       
     </style>
   </head>
@@ -307,18 +313,18 @@
         </p>
         <div class="mbox d-flex gap-2 shadow-light">
           <div class="col-md mail">
-            <div class="form-floating">
+            <div class="form-floating ">
               <input
                 type="email"
-                class="form-control"
+                class="form-control get1"
                 id="floatingInputGrid"
                 placeholder="name@example.com"
               />
               <label for="floatingInputGrid">Email address</label>
             </div>
           </div>
-          <button class="btn btn-danger fs-3 px-4">
-            Get Started <i class="fa-solid fa-chevron-right"></i>
+          <button class="btn btn-danger fs-3 px-4 get">
+            Get Started <i class="fa-solid fa-chevron-right get"></i>
           </button>
         </div>
       </div>
@@ -1119,8 +1125,8 @@
     </div>
     <!-- footer -->
     
-     <div class="container foot d-flex justify-content-center ">
-        
+     <div class="container foot d-flex flex-column justify-content-center mb-3">
+      <h5 class="text-secondary pan">Questions? Call <u>000-800-919-1743</u></h5>
         <div class="pans d-flex justify-content-evenly text-secondary">
             <div class="pan d-flex flex-column justify-content-start my-3 px-3 fs-5">
                 <u>FAQ</u>
@@ -1146,6 +1152,22 @@
                 <u>Contact Us</u>
             </div>
         </div>
+        <div class="dropdown px-2 drp">
+          <button
+            class="btn btn-outline-light dropdown-toggle shadow-light fw-bold"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="fa-solid fa-language px-2"></i>English
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">English</a></li>
+            <li><a class="dropdown-item" href="#">Hindi</a></li>
+            <li><a class="dropdown-item" href="#">Telugu</a></li>
+          </ul>
+        </div>
+        <h5 class="text-secondary pan mx-3 mt-4">NetFlix India!</h5>
      </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
